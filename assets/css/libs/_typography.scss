@@ -1,0 +1,55 @@
+// ------------------------------------------------------------
+// Global typography
+// ------------------------------------------------------------
+// ------------------------------------------------------------
+// Fonts
+// ------------------------------------------------------------
+.font-body {
+  font-family: 'Myriad W01 SmBd';
+  font-family: 'Myriad W01 Regular';
+  font-family: 'Myriad W01 Bd';
+  font-family: 'Myriad W01 Bd Cnd';
+  font-family: 'Myriad W01 It';
+}
+
+.font-var {
+  font-family: Georgia, serif;
+}
+
+// ------------------------------------------------------------
+// Core typography
+// ------------------------------------------------------------
+p,
+span,
+cite,
+ol,
+ul,
+pre,
+label,
+input,
+textarea {
+  @include adjust-font-size-to($para);
+}
+
+ul {
+  @include nobullet;
+}
+
+ol {
+  @include nobullet;
+}
+
+li {
+  line-height: inherit;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+em,
+i,
+q {
+  font-style: italic;
+}

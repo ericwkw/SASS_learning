@@ -1,0 +1,11 @@
+// ::Imports pre-render. Must be after reset
+// ------------------------------------------------------------
+@import "libs/required";
+@import "libs/reset";
+@import "libs/settings";
+@import "libs/mixins";
+@import "libs/placeholders";
+
+// Use SASS globbing to import all _.scss files in the module folder.
+// These should be independent modules that follow the BEM/SMACSS way
+@import "modules/*";
